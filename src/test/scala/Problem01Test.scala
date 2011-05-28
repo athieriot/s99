@@ -12,7 +12,7 @@ import collection.immutable.Stack
  * Time: 22:50
  */
 
-class ProblemOneTest extends FeatureSpec with GivenWhenThen with MustMatchers {
+class Problem01Test extends FeatureSpec with GivenWhenThen with MustMatchers {
 
   feature("Problem One") {
 
@@ -24,7 +24,7 @@ class ProblemOneTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       val list = List(1, 1, 2, 3, 5, 8)
 
       when("we ask for the last element")
-      val result = new ProblemOne().last(list)
+      val result = new Problem01().last(list)
 
       then("the last one must be returned")
       result must be === 8

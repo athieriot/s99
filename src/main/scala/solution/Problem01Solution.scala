@@ -7,7 +7,7 @@
 //     def last[A](l: List[A]): A = ...
 // The `[A]` allows us to handle lists of any type.
 
-object ProblemOneSolve {
+object P01 {
   // There are several ways to solve this problem.  If we use builtins, it's very
   // easy.
   def lastBuiltin[A](ls: List[A]): A = ls.last
