@@ -29,5 +29,17 @@ class Problem01Test extends FeatureSpec with GivenWhenThen with MustMatchers {
       then("the last one must be returned")
       result must be === 8
     }
+
+    scenario("a function -last- is call on an empty list") {
+
+      given("an empty list")
+      val list = List.empty
+
+      when("we ask for the last element")
+      then("an exception must be throws")
+      evaluating {
+        new Problem01().last(list)
+      } must produce [NoSuchElementException]
+    }
   }
 }

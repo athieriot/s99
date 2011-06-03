@@ -27,5 +27,17 @@ class Problem04Test extends FeatureSpec with GivenWhenThen with MustMatchers {
       then("the number of elements must be returned")
       result must be === 6
     }
+
+    scenario("a function -length- is call on an empty list") {
+
+      given("an empty")
+      val list = List.empty
+
+      when("we ask for the number of elements")
+      val result = new Problem04().length(list)
+
+      then("the 0 must be return")
+      result must be === 0
+    }
   }
 }
