@@ -30,7 +30,7 @@ class Problem04Test extends FeatureSpec with GivenWhenThen with MustMatchers {
 
     scenario("a function -length- is call on an empty list") {
 
-      given("an empty")
+      given("an empty list")
       val list = List.empty
 
       when("we ask for the number of elements")
